@@ -9,7 +9,8 @@ This repistory contains code that helps you run the [pe_quick_data](https://forg
    - *PE node ssh private key file path*: File path to SSH Private Key to remotely access the PE node. 
 3. Pick a *work-machine* (laptop/desktop/Linux VM/Win VM) to install Bolt on. It needs to have the *ssh private key file* to remotely connect to the PE node.
 4. Check if the collected information is correct & that your *work-machine* can remotely connect to the PE node: 
-   - Type: `ssh -i <PE node ssh private key file path> <PE node user name>@PE-FQDN 'hostname'`
+   - Type: `ssh -i <PE node ssh private key file path> <PE node user name>@<PE-FQDN> 'hostname'`
+   - Eg:   `ssh -i  ~/keys/pe2018.pem centos@pe2018.example.com 'hostname'` 
 5. Install Bolt : https://puppet.com/docs/bolt/latest/bolt_installing.html on your *work-machine*.
 6. Execute the *run.sh* script as: 
    - `$ run.sh <PE-FQDN> <PE node user name> <PE node ssh private key file path>`
