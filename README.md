@@ -1,5 +1,5 @@
 # Running the PE Quick Data Bolt Plan
-This repistory contains code that helps you run the [pe_quick_data](https://forge.puppet.com/puppetlabs/pe_quick_data) bolt plan to collect Puppet-specific information about your Puppet Enterprise environment. This is purely for support reasons.
+This repository contains code that helps you run the [pe_quick_data](https://forge.puppet.com/puppetlabs/pe_quick_data) bolt plan to collect Puppet-specific information about your Puppet Enterprise environment. This is purely for support reasons.
 
 # Requirements
 1. The pe_quick_data bolt only works with [Puppet Enterprise (PE) 2018 or later](https://puppet.com/misc/version-history/)
@@ -10,7 +10,7 @@ This repistory contains code that helps you run the [pe_quick_data](https://forg
 3. Pick a *work-machine* (laptop/desktop/VM) to install Bolt on. This *work-machines* needs to have:
    - *Connection to the internet* to download Bolt & later the pe_quick_data module from the Puppet forge.
    - The *ssh private key file* & connectivity to remotely connect to the PE node.
-4. Check if the collected information is correct & that your *work-machine* can remotely connect to the PE node: 
+4. Check if the collected information is correct & your *work-machine* can remotely connect to the PE node: 
    - Type: `ssh -i <PE node ssh private key file path> <PE node user name>@<PE-FQDN> 'hostname'`
    - Eg:   `ssh -i  ~/keys/pe2018.pem centos@pe2018.example.com 'hostname'` 
 5. Install Bolt : https://puppet.com/docs/bolt/latest/bolt_installing.html on your *work-machine*.
