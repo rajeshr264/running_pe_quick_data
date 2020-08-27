@@ -7,7 +7,9 @@ This repistory contains code that helps you run the [pe_quick_data](https://forg
    - *PE-FQDN*: Fully qualified name of the node that Puppet Enterprise (PE) 2018+ is running on.
    - *PE node user name*: User name with **sudo access permissions** for that node
    - *PE node ssh private key file path*: File path to SSH Private Key to remotely access the PE node. 
-3. Pick a *work-machine* (laptop/desktop/VM) to install Bolt on. It needs to have the *ssh private key file* to remotely connect to the PE node.
+3. Pick a *work-machine* (laptop/desktop/VM) to install Bolt on. This *work-machines* needs to have:
+   - *Connection to the internet* to download Bolt & later the pe_quick_data module from the Puppet forge.
+   - The *ssh private key file* & connectivity to remotely connect to the PE node.
 4. Check if the collected information is correct & that your *work-machine* can remotely connect to the PE node: 
    - Type: `ssh -i <PE node ssh private key file path> <PE node user name>@<PE-FQDN> 'hostname'`
    - Eg:   `ssh -i  ~/keys/pe2018.pem centos@pe2018.example.com 'hostname'` 
