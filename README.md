@@ -14,6 +14,6 @@ This repository contains code that helps you run the [pe_quick_data](https://for
    - Type: `ssh -i <PE node ssh private key file path> <PE node user name>@<PE-FQDN> 'hostname'`
    - Eg:   `ssh -i  ~/keys/pe2018.pem centos@pe2018.example.com 'hostname'` 
 5. Install Bolt : https://puppet.com/docs/bolt/latest/bolt_installing.html on your *work-machine*.
-6. Execute the *run.sh* script as: 
+6. You are ready to execute the pe_quick_data module with Bolt. Execute the wrapper script *run.sh* script, that calls Bolt, as: 
    - `$ run.sh <PE-FQDN> <PE node user name> <PE node ssh private key file path>`
    - Example: `$ run.sh pe2018.example.com centos ~/keys/pe2018.pem`
