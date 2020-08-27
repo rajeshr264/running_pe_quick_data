@@ -2,7 +2,7 @@
 
 if [ $# -ne 3 ]
   then
-    echo "Error: No arguments supplied"
+    echo "Error: Missing arguments."
     echo "Usage: run.sh <PE FQDN> <PE Node User name> <PE Node Private Key>"
     exit
 fi
